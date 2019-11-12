@@ -1,0 +1,31 @@
+Title: DVF
+
+----
+
+Cover:
+
+- monster-trees-in-the-fog.jpg
+
+----
+
+Modify: 
+
+----
+
+Headline: Our friends with leaves
+
+----
+
+Subheading: Before they are gone!
+
+----
+
+Description: Hug them if you like. They might not appreciate it though.
+
+----
+
+Category: featured
+
+----
+
+Tags: featured

@@ -8,19 +8,59 @@
  */
 ?>
 
-  </div>
 
-  <footer class="footer">
-    <a href="<?= url() ?>">&copy; <?= date('Y') ?> / <?= $site->title() ?></a>
 
-    <?php if ($about = page('about')): ?>
-    <nav class="social">
-      <?php foreach ($about->social()->toStructure() as $social): ?>
-      <a href="<?= $social->url() ?>"><?= $social->platform() ?></a>
-      <?php endforeach ?>
-    </nav>
-    <?php endif ?>
-  </footer>
+    <footer class="footer">
 
-</body>
-</html>
+
+        <?php if ($site): ?>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a class="footer__logo" href="<?= $site->url() ?>"><span>D.R</span></a>
+                    <span>DAVID RODGERS INC.</span>
+                </li>
+                <?php foreach ($site->social()->toStructure() as $social): ?>
+                <li class="social"><a href="<?= $social->url() ?>"><?= $social->platform() ?></a></li>
+                <?php endforeach ?>
+                <li>
+                    <p>
+                        <?= $site->address()->kirbytextinline() ?>
+                    </p>
+                    <p>
+                        <?= $site->phone() ?>
+                    </p>
+                    <p>
+                        <a href="emailto:<?= $site->email() ?>"><?= $site->email() ?></a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+        <?php endif ?>
+        <section class="bottom">
+            <a href="<?= url() ?>">&copy; <?= date('Y') ?> / <?= $site->title() ?></a>
+
+            <a class="site-credit" href="https://www.thewondermob.com">Site Credit</a>
+        </section>
+    </footer>
+    </div>
+    </div>
+    </main>
+
+    <?= js([
+          'assets/js/jquery.js',
+          'assets/js/imagesloaded.pkgd.min.js',
+          'assets/js/flickity.js',
+          'assets/js/TweenMax.min.js',
+          
+        ]) ?>
+
+        <?php if($page->isHomePage()): ?>
+        <?= js([ 'assets/js/home.js' ]) ?>
+            <?php else: ?>
+            <?=js([ 'assets/js/projects.js' ]) ?>
+                <?php endif ?>
+
+                </body>
+
+                </html>

@@ -7,36 +7,38 @@
  */
 ?>
 
-<!doctype html>
-<html lang="en">
-<head>
+    <!doctype html>
+    <html lang="en">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <head>
 
-  <!-- The title tag we show the title of our site and the title of the current page -->
-  <title><?= $site->title() ?> | <?= $page->title() ?></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
+        <!-- The title tag we show the title of our site and the title of the current page -->
+        <title>
+            <?= $site->title() ?>
+        </title>
+        <link rel="stylesheet" href="https://use.typekit.net/uqx8mtr.css">
+
+        <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
         More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers -->
-  <?= css(['assets/css/index.css', '@auto']) ?>
+        <?= css(['assets/css/index.css', '@auto']) ?>
+            <?= css(['assets/css/flickity.css']) ?>
+                <script>
+                    document.documentElement.className = "js";
+                    var supportsCssVars = function() {
+                        var e, t = document.createElement("style");
+                        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+                    };
+                    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 
-</head>
-<body>
+                </script>
 
-  <div class="page">
-    <header class="header">
-      <!-- In this link we call `$site->url()` to create a link back to the homepage -->
-      <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
 
-      <nav id="menu" class="menu">
-        <?php 
-        // In the menu, we only fetch listed pages, i.e. the pages that have a prepended number in their foldername
-        // We do not want to display links to unlisted `error`, `home`, or `sandbox` pages
-        // More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-        foreach ($site->children()->listed() as $item): ?>
-        <?= $item->title()->link() ?>
-        <?php endforeach ?>
-      </nav>
-    </header>
+    </head>
 
+    <body class="loading">
+        <main>
+            <div class="page" data-scroll>
+                <header class="header">

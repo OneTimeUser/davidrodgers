@@ -3,10 +3,10 @@
 # Sections can have different layouts and display additional information or a preview image
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
 type: pages
-headline: Photography
-parent: kirby.page("photography")
+headline: Projects
+parent: kirby.page("projects")
 size: tiny
-info: "{{ page.images.count }} image(s)"
+info: "{{ page.category }}"
 layout: cards
 template: album
 empty: No albums yet

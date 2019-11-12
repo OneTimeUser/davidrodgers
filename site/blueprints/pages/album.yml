@@ -1,14 +1,22 @@
 # Each page blueprint must have a title, the title may be different from the file name
-title: Album
+title: Project
 
 # Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 🖼
 
 # Page status can be limited, here to `draft` and `listed`.
 # More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-status:
-  draft: true
-  listed: true
+#status:
+#  draft: true
+#  listed: true
+#  
+#
+#  default: album
+#  extends: options/changeTemplate
+  
+options:
+  changeStatus: true
+  extends: options/changeTemplate
 
 # Define the form layout with two columns
 # Columns are optional but help structure the form layout
@@ -29,6 +37,7 @@ columns:
           ratio: 5/4
           cover: true
         min: 1
+        max: 1
         size: small
 
   - width: 1/3
@@ -38,8 +47,24 @@ columns:
       cover:
         type: files
         multiple: false
+      modify:
+        help: "If you do not want the title on a single line or if it does not fit, break it up here. Guide: 'Alexander' fits on a single line. 'ALEXANDER' does not. All caps -> 7 characters per line max, otherwise 9-10 characters per line with lower case titles."
+        label: Modified Title
+        type: textarea
+        buttons: false
       headline:
+        type: text
+      subheading:
         type: text
       description:
         type: textarea
-      tags: true
+      category:
+        label: Category
+        type: radio
+        required: true
+        options:
+          featured: Featured
+          recent: Recent
+          archive: Archive
+        
+          

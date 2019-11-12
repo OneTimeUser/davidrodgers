@@ -15,12 +15,12 @@ sections:
   info:
     headline: Info
     type: info
-    text: All content for the homepage is being pulled from the photography page.
+    text: All content for the homepage is being pulled from the projects page. You do not need to do anything here!
 
 # The photography section extends a pages section defined in the `/site/blueprints/section/album.yml` blueprint
 # More about reusing and extending sections: https://getkirby.com/docs/guide/blueprints/extending-blueprints#reusing-and-extending-sectionss
   photography:
-    headline: Photography
+    headline: Projects
     extends: sections/albums
     status: listed
 

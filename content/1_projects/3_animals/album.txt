@@ -1,0 +1,31 @@
+Title: BRAVO
+
+----
+
+Cover:
+
+- peter-fox.jpg
+
+----
+
+Modify: 
+
+----
+
+Headline: Animals as leaders
+
+----
+
+Subheading: 
+
+----
+
+Description: What does the fox say?
+
+----
+
+Category: recent
+
+----
+
+Tags: archive

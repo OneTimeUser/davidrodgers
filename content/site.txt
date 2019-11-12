@@ -1,1 +1,82 @@
-Title: Mægazine
+Title: David Rodgers
+
+----
+
+Agency:
+
+We are a creative agency focused on full-
+service event production.
+
+----
+
+Agencyimage:
+
+- occasions.png
+
+----
+
+Clients:
+
+- 
+  client: 3.1 Phillip Lim
+- 
+  client: Absolut Vodka
+- 
+  client: Barcardi
+- 
+  client: Calvin Klein
+- 
+  client: Cartier
+- 
+  client: Dior
+- 
+  client: Diane Von Furstenberg
+- 
+  client: Diesel
+- 
+  client: 'Dolce & Gabbana'
+- 
+  client: Giorgio Armani
+- 
+  client: Hermés
+- 
+  client: "L'Oreal"
+- 
+  client: Lexus
+- 
+  client: Maison Martin Margiela
+- 
+  client: Nintendo
+- 
+  client: Museum of Contemporary Art
+- 
+  client: Paramount Pictures
+- 
+  client: Yahoo
+
+----
+
+Address:
+
+3016 Passmore Drive
+LA, CA 90068
+
+----
+
+Email: info@davidrodgersinc.com
+
+----
+
+Phone: 323 462 5310
+
+----
+
+Social:
+
+- 
+  platform: Instagram
+  url: https://instagram.com/getkirby
+
+----
+
+Text: The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. Yes.

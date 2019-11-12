@@ -10,39 +10,99 @@
  */
 ?>
 
-<?php snippet('header') ?>
+    <?php snippet('header') ?>
+    <!-- In this link we call `$site->url()` to create a link back to the homepage -->
+    <a class="logo" href="<?= $site->url() ?>">D.R</a>
 
-<main>
-  <?php snippet('intro') ?>
+    <nav id="menu" class="menu">
+        <span>DAVID RODGERS INC.</span>
+        <!--                    In the menu, we only fetch listed pages, i.e. the pages that have a prepended number in their foldername // We do not want to display links to unlisted `error`, `home`, or `sandbox` pages // More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
+                    foreach ($site->children()->listed() as $item):
+                    $item->title()->link()
+                     endforeach-->
+    </nav>
+    </header>
 
 
-  <?php 
+    <div class="main__content home-page">
+
+        <?php 
   // we always use an if-statement to check if a page exists to prevent errors 
   // in case the page was deleted or renamed before we call a method like `children()` in this case
-  if ($photographyPage = page('photography')): ?>
-  <ul class="grid">
-    <?php foreach ($photographyPage->children()->listed() as $album): ?>
-    <li>
-      <a href="<?= $album->url() ?>">
-        <figure>
-          <?php 
+     $album = page('projects')->children()->listed()->filterBy("category", "featured", ",")->shuffle()->first() ?>
+        <section class="home-featured">
+            <article class="client">
+                <figure>
+                    <?php 
           // the `cover()` method defined in the `album.php` page model can be used 
           // everywhere across the site for this type of page
           if ($cover = $album->cover()): ?>
-          <?= $cover->resize(1024, 1024) ?>
-          <?php endif ?>
-          <figcaption>
-            <span>
-              <span class="example-name"><?= $album->title() ?></span>
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
-    <?php endforeach ?>
-  </ul>
-  <?php endif ?>
+                    <!--                    <?= $cover->resize(1024, 1024) ?>-->
+                    <!--                    new addition-->
+                    <div class="item__img-wrap">
+                        <div class="item__img" style="background-image: url(<?php echo $cover->url()?>)"></div>
+                    </div>
+                    <!--                    end new addition-->
+                    <?php endif ?>
+                    <figcaption>
 
-</main>
+                        <p class="featured-title">
 
-<?php snippet('footer') ?>
+                            <?= $album->modify()->isEmpty()? $album->title() : $album->modify()->kirbytextinline() ; ?>
+
+                        </p>
+                        <div class="featured-bottom">
+                            <p class="featured-heading">
+                                <?= $album->headline() ?>
+                            </p>
+                            <p class="featured-sub">
+                                <?= $album->subheading() ?>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <a class="more" href="<?= page('projects')->url() ?>">VIEW MORE</a>
+        </section>
+        <section id="about-agency">
+            <p class="about__dark-text">
+                <span> <?= $site->agency()->kirbytextinline() ?></span>
+            </p>
+            <p class="about__light-text" style="background:center / cover no-repeat url( <?= $site->agencyimage()->toFile()->url() ?>)">
+                <span> <?= $site->agency()->kirbytextinline() ?></span>
+            </p>
+
+        </section>
+        <section id="client-list">
+            <?php foreach (page('projects')->children()->listed()->filterBy("category", '!=', 'archive') as $coverImage): ?>
+
+            <img src="<?php echo $coverImage->cover()->resize(null,200)->url() ?>">
+
+            <?php endforeach ?>
+
+            <span class="section__title">CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS</span>
+            <article>
+                <?php $site->clients()->toStructure()->isOdd() ? $numChunks = ($site->clients()->toStructure()->count()/2) + 1 : $numChunks = $site->clients()->toStructure()->count()/2; ?>
+
+
+
+                <?php $chunks = $site->clients()->toStructure()->chunk($numChunks);?>
+
+                <?php foreach ($chunks as $chunk): ?>
+
+                <ul class="client">
+                    <?php foreach ($chunk as $client): ?>
+                    <li>
+                        <?= $client->client() ?>
+                    </li>
+                    <?php endforeach ?>
+                </ul>
+                <?php endforeach ?>
+            </article>
+
+        </section>
+
+
+
+        <?php snippet('footer') ?>
