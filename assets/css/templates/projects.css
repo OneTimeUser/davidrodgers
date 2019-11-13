@@ -80,7 +80,19 @@ section.proj article {
     left: 0;
     width: auto;
     margin: 0 auto;
-    z-index: -2;
+    z-index: 2;
+}
+
+.client-name__archive figure {}
+
+.client-name__archive figcaption {
+    position: relative:
+}
+
+.client-name__archive figcaption:hover {
+    z-index: 3;
+    mix-blend-mode: difference;
+
 }
 
 .project__container {
