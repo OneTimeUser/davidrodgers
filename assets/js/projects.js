@@ -309,7 +309,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             //            });
 
             $('.client-content').html('');
-            $('.client__close').fadeOut(100);
+            $('.client__close').addClass('hide');
 
             var clientContent = this.parentElement.getElementsByClassName("client-content")[0];
 
@@ -325,13 +325,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
             var closeProj = this.parentElement.querySelector(".client__close");
 
-            $(closeProj).fadeIn(100);
+            $(closeProj).removeClass("hide");
 
             closeProj.addEventListener('click',
                 function (e) {
                     e.preventDefault();
 
-                    $(closeProj).fadeOut(100);
+                    $(closeProj).addClass('hide');
                     $(this).parent().children('.client-content').html('');
                     new SmoothScroll().initEvents();
                 });

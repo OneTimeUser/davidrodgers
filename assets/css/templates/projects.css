@@ -54,6 +54,11 @@ section.proj article {
 }
 
 .client__close {
+    display: flex;
+    cursor: pointer;
+}
+
+.hide {
     display: none;
 }
 
@@ -186,6 +191,7 @@ section.proj article {
 
 .archive li {
     margin: .5rem 0;
+    white-space: normal;
 }
 
 @media screen and (min-width: 40em) {
