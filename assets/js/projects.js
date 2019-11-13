@@ -376,6 +376,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     // options
                     cellAlign: 'left',
                     contain: true,
+                    freescroll: true,
                     wrapAround: true,
                     imagesLoaded: true,
                     percentPosition: false,
