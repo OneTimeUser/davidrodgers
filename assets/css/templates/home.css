@@ -128,7 +128,7 @@
     margin-bottom: 4rem;
 }
 
-#client-list article {
+#client-list .section__title {
     white-space: nowrap;
 
 }
@@ -147,6 +147,7 @@
 #client-list article {
     display: flex;
     justify-content: space-evenly;
+    white-space: normal;
 }
 
 #client-list ul {
