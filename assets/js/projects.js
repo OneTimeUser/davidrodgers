@@ -371,7 +371,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         function checksize() {
             preloadProjectImages().then(() => {
-                new SmoothScroll().initEvents();
+
                 $('.main-carousel').flickity({
                     // options
                     //                    cellAlign: 'left',
@@ -390,6 +390,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         x3: 30
                     }
                 });
+                new SmoothScroll().initEvents();
             });
 
         }

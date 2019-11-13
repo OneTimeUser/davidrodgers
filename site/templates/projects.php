@@ -54,7 +54,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a class="client__close">
+                    <a class="client__close hide">
                         <?php echo file_get_contents("assets/img/close.svg"); ?>
                     </a>
                     <div class="client-content content-loading"></div>
