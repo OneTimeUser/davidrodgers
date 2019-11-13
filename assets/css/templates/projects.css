@@ -81,18 +81,19 @@ section.proj article {
     width: auto;
     margin: 0 auto;
     z-index: 2;
+    pointer-events: none;
 }
 
-.client-name__archive figure {}
+.client-name__archive figure {
+    /*    mix-blend-mode: difference;*/
+}
 
 .client-name__archive figcaption {
-    position: relative:
+    /*    position: relative;*/
 }
 
 .client-name__archive figcaption:hover {
-    z-index: 3;
-    mix-blend-mode: difference;
-
+    /*    z-index: 3;*/
 }
 
 .project__container {
