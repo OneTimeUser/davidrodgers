@@ -374,8 +374,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 new SmoothScroll().initEvents();
                 $('.main-carousel').flickity({
                     // options
-//                    cellAlign: 'left',
-                    contain: true,
+                    //                    cellAlign: 'left',
+                    //                    contain: true,
                     freescroll: true,
                     wrapAround: true,
                     imagesLoaded: true,
