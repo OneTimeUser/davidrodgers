@@ -68,6 +68,8 @@
     float: right;
     font-size: 1rem;
     margin-top: .5rem;
+    position: relative;
+    z-index: 9;
 }
 
 .more::after {
