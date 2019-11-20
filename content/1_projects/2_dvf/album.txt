@@ -4,7 +4,8 @@ Title: DVF
 
 Cover:
 
-- 16dvf-party-slide-auiv-jumbo-v2.jpg
+- >
+  dvf-exhibition-party-461750239_120708517552.jpg
 
 ----
 
@@ -12,11 +13,11 @@ Modify:
 
 ----
 
-Headline: Celebration Party
+Headline: Journey of a Dress
 
 ----
 
-Subheading: 40th Anniversary of the Iconic Wrap Dress
+Subheading: Exhibition Opening Gala
 
 ----
 
