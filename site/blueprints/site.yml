@@ -46,15 +46,14 @@ columns:
         headline: Archive Projects
         type: pagesdisplay
         query: site.index.filterBy("category", "archive", ",")
-        layout: cards
-        size: tiny
+        layout: list
         info: "{{ page.category }}"
         template: album
         empty: No albums yet
-        image:
-          query: page.cover
-          cover: true
-          ratio: 5/4
+#        image:
+#          query: page.cover
+#          cover: true
+#          ratio: 5/4
 #      albums: sections/albums
 
   # The second column has two sections, `notes` and `pages`

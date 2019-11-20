@@ -48,13 +48,15 @@ columns:
         multiple: false
       modify:
         help: "If you do not want the title on a single line or if it does not fit, break it up here. Guide: 'Alexander' fits on a single line. 'ALEXANDER' does not. All caps -> 7 characters per line max, otherwise 9-10 characters per line with lower case titles."
-        label: Modified Title
+        label: Modified Title (Featured Projects ONLY)
         type: textarea
         buttons: false
       headline:
         type: text
+        placeholder: e.g. S/S 2019
       subheading:
         type: text
+        placeholder: e.g. Presentation
       description:
         type: textarea
       category:
