@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         layout() {
 
             // translate the title
-            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth/2)}px,0,0)`;
+            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth)}px,0,0)`;
 
         }
     }
@@ -319,6 +319,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }, 500);
 
             var url = this.getAttribute('href');
+            clientContent.classList.add('content-loading');
             getContent(url + ".json", clientContent);
 
 
@@ -362,6 +363,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 cc.innerHTML = this.response;
                 //console.log(this.response);
                 xhr.addEventListener('loadend', checksize());
+                cc.classList.remove('content-loading');
 
 
 
@@ -390,6 +392,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         x3: 30
                     }
                 });
+
                 new SmoothScroll().initEvents();
             });
 

@@ -140,7 +140,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
             // if the mouse moved more than [this.threshold] then show the next image
             if (distance > this.threshold && isOnEl == true) {
-                console.log('both are true');
                 this.showNextImage();
 
                 ++this.zIndexVal;
@@ -310,7 +309,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             // translates the image
             this.DOM.image.style.transform = `translate3d(0,${this.renderedStyles.innerTranslationY.previous}px,0)`;
             // translate the title
-            this.DOM.title.style.transform = `translate3d(${this.renderedStyles.titleTranslationX.previous}px,0,0)`;
+            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth/3)}px,0,0)`;
 
         }
     }

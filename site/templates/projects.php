@@ -36,7 +36,7 @@
                     <a class="client__close hide">
                         <?php echo file_get_contents("assets/img/close.svg"); ?>
                     </a>
-                    <div class="client-content content-loading"></div>
+                    <div class="client-content"></div>
                 </li>
                 <?php endforeach ?>
             </ul>
@@ -57,7 +57,7 @@
                     <a class="client__close hide">
                         <?php echo file_get_contents("assets/img/close.svg"); ?>
                     </a>
-                    <div class="client-content content-loading"></div>
+                    <div class="client-content"></div>
                 </li>
                 <?php endforeach ?>
             </ul>

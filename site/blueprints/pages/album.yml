@@ -16,7 +16,8 @@ icon: 🖼
   
 options:
   changeStatus: true
-  extends: options/changeTemplate
+  preview: false
+#  extends: options/changeTemplate
 
 # Define the form layout with two columns
 # Columns are optional but help structure the form layout
@@ -46,6 +47,7 @@ columns:
       cover:
         type: files
         multiple: false
+        required: true
       modify:
         help: "If you do not want the title on a single line or if it does not fit, break it up here. Guide: 'Alexander' fits on a single line. 'ALEXANDER' does not. All caps -> 7 characters per line max, otherwise 9-10 characters per line with lower case titles."
         label: Modified Title (Featured Projects ONLY)
