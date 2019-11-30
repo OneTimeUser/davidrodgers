@@ -33,6 +33,7 @@
         <section class="home-featured">
             <article class="client">
                 <figure>
+
                     <?php 
           // the `cover()` method defined in the `album.php` page model can be used 
           // everywhere across the site for this type of page
@@ -40,6 +41,7 @@
                     <!--                    <?= $cover->resize(1024, 1024) ?>-->
                     <!--                    new addition-->
                     <div class="item__img-wrap">
+
                         <div class="item__img" style="background-image: url(<?php echo $cover->url()?>)"></div>
                     </div>
                     <!--                    end new addition-->
@@ -77,7 +79,7 @@
         <section id="client-list">
             <?php foreach (page('projects')->children()->listed()->filterBy("category", '!=', 'archive') as $coverImage): ?>
 
-            <img src="<?php echo $coverImage->cover()->resize(null,200)->url() ?>">
+            <img src="<?php echo $coverImage->cover()->resize(null,300)->url() ?>">
 
             <?php endforeach ?>
 
