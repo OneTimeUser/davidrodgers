@@ -114,9 +114,10 @@ section.proj article {
     right: 0;
     left: 0;
     width: auto;
-    margin: 0 auto;
+    margin: auto;
     z-index: 2;
     pointer-events: none;
+    height: 80%;
 }
 
 .client-name__archive figure {
@@ -226,15 +227,15 @@ section.proj article {
 
 .archive article {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 
 
 .archive ul {
-    font-size: 1.2rem;
-    width: 50%;
+    font-size: 1rem;
+    margin-right: 1vw;
 }
 
 .archive li {
@@ -272,9 +273,8 @@ section.proj article {
 
 @media screen and (min-width: 60em) {
 
-    .archive ul {
-        width: 25%;
-    }
+    .archive ul {}
+
     .albums {
         grid-template-columns: repeat(3, 1fr);
     }

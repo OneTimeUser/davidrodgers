@@ -1,26 +1,26 @@
-Title: VIDAL SASSOON
+Title: Christian Louboutin
 
 ----
 
 Cover:
 
-- bg.png
+- cl2.jpg
 
 ----
 
-Modify:
+Modify: 
 
 ----
 
-Headline: Fashion Presentation 2020
+Headline: 
 
 ----
 
-Subheading: New York, New York
+Subheading: 
 
 ----
 
-Description: These bicycles are simply the best!  Rememberdakfjal;sd al;ksdfkasdf lakdkjdfkjf ;lkasdjkflad lakdfkljasd fl;kadjsfja fkasdjf ldkfjasd.
+Description: 
 
 ----
 

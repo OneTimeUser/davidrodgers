@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         layout() {
 
             // translate the title
-            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth)}px,0,0)`;
+            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth/2)}px,0,0)`;
 
         }
     }
