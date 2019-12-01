@@ -362,40 +362,43 @@ window.addEventListener('DOMContentLoaded', (event) => {
             if (this.status == 200) {
                 cc.innerHTML = this.response;
                 //console.log(this.response);
-                xhr.addEventListener('loadend', checksize());
-                cc.classList.remove('content-loading');
+                xhr.addEventListener('loadend', checksize(removeLoader));
+                //cc.classList.remove('content-loading');
+            }
 
-
-
-
+            function removeLoader() {
+                $(body).find('.content-loading').removeClass('content-loading');
             }
         }
 
-        function checksize() {
-            preloadProjectImages().then(() => {
+        function checksize(callback) {
+            //            preloadProjectImages().then(() => {
+            $('.main-carousel').on('ready.flickity',
+                function () {
 
-                $('.main-carousel').flickity({
-                    // options
-                    //                    cellAlign: 'left',
-                    //                    contain: true,
-                    freescroll: true,
-                    wrapAround: true,
-                    imagesLoaded: true,
-                    percentPosition: false,
-                    pageDots: false,
-                    arrowShape: {
-                        x0: 25,
-                        x1: 65,
-                        y1: 40,
-                        x2: 70,
-                        y2: 40,
-                        x3: 30
-                    }
+                    //                    
+                    console.log('flickity loaded');
                 });
 
-                new SmoothScroll().initEvents();
+            $('.main-carousel').flickity({
+                freescroll: true,
+                wrapAround: true,
+                imagesLoaded: true,
+                percentPosition: false,
+                pageDots: false,
+                arrowShape: {
+                    x0: 25,
+                    x1: 65,
+                    y1: 40,
+                    x2: 70,
+                    y2: 40,
+                    x3: 30
+                }
             });
 
+            new SmoothScroll().initEvents();
+            //            });
+            callback();
         }
 
         xhr.send();
