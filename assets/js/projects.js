@@ -395,10 +395,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     x3: 30
                 }
             });
-
+            callback();
             new SmoothScroll().initEvents();
             //            });
-            callback();
+
         }
 
         xhr.send();
