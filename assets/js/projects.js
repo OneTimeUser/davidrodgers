@@ -92,10 +92,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             this.DOM.title = this.DOM.el.querySelector('.section__title');
 
             this.renderedStyles = {
-                // here we define which property will change as we scroll the page and the items is inside the viewport
-                // in this case we will be translating the image on the y-axis
-                // we interpolate between the previous and current value to achieve a smooth effect
-
 
                 titleTranslationX: {
                     previous: 0,
@@ -163,7 +159,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         layout() {
 
             // translate the title
-            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth/2)}px,0,0)`;
+            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth)}px,0,0)`;
 
         }
     }

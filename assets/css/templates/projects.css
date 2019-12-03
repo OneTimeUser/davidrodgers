@@ -35,10 +35,12 @@ section.proj article {
 
 .featured ul {
     font-size: 3.5rem;
+    white-space: normal;
 }
 
 .recent ul {
     font-size: 3.5rem;
+    white-space: normal;
 }
 
 .client-name {
@@ -227,7 +229,7 @@ section.proj article {
 
 .archive article {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -235,7 +237,8 @@ section.proj article {
 
 .archive ul {
     font-size: 1rem;
-    margin-right: 1vw;
+    margin-right: 1%;
+    width: 49%;
 }
 
 .archive li {
@@ -250,6 +253,10 @@ section.proj article {
 
     section.proj {
         margin: 25px 0 3rem 0;
+    }
+
+    .archive ul {
+        width: 24%;
     }
 
 }
