@@ -33,13 +33,9 @@ section.proj article {
 }
 
 
-.featured ul {
-    font-size: 3.5rem;
-    white-space: normal;
-}
-
+.featured ul,
 .recent ul {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     white-space: normal;
 }
 
@@ -257,6 +253,12 @@ section.proj article {
 
     .archive ul {
         width: 24%;
+    }
+
+    .featured ul,
+    .recent ul {
+        font-size: 3.5rem;
+        white-space: normal;
     }
 
 }

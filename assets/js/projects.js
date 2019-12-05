@@ -377,11 +377,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 });
 
             $('.main-carousel').flickity({
-                freescroll: true,
+                freeScroll: true,
                 wrapAround: true,
                 imagesLoaded: true,
                 percentPosition: false,
                 pageDots: false,
+                cellAlign: 'left',
                 arrowShape: {
                     x0: 25,
                     x1: 65,
