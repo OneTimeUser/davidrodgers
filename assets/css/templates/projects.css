@@ -111,11 +111,12 @@ section.proj article {
     bottom: 0;
     right: 0;
     left: 0;
-    width: auto;
+    max-width: 100%;
     margin: auto;
     z-index: 2;
     pointer-events: none;
-    height: 80%;
+    max-height: 80%;
+    width: auto;
 }
 
 .client-name__archive figure {
@@ -259,6 +260,11 @@ section.proj article {
     .recent ul {
         font-size: 3.5rem;
         white-space: normal;
+    }
+
+    .client-name__archive img {
+        width: auto;
+        height: 80%;
     }
 
 }
