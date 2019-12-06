@@ -20,6 +20,7 @@
 
 .item__img-wrap {
     --aspect-ratio: 1/1.5;
+    /*for image sizing!*/
     overflow: hidden;
     width: 100%;
     max-width: 100%;
