@@ -10,7 +10,7 @@ $data = "<article>
 
 foreach ($images as $img):
 
-$data .= "<img src='".$img->url()."'>";
+$data .= "<img class='carousel-cell-image' data-flickity-lazyload='".$img->url()."'>";
     
 endforeach;
 

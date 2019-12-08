@@ -380,6 +380,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 freeScroll: true,
                 wrapAround: true,
                 imagesLoaded: true,
+                lazyLoad: 1,
                 percentPosition: false,
                 pageDots: false,
                 cellAlign: 'left',
