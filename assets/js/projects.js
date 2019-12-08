@@ -378,9 +378,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
             $('.main-carousel').flickity({
                 freeScroll: true,
-//                wrapAround: true,
+                //                wrapAround: true,
                 imagesLoaded: true,
-                lazyLoad: 1,
+                lazyLoad: 2,
                 percentPosition: false,
                 pageDots: false,
                 cellAlign: 'left',
