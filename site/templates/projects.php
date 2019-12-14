@@ -78,7 +78,7 @@
                     <li class="client-name__archive" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
 
                         <figure>
-                            <img src="<?php echo $album->cover()->resize(null,500)->url() ?>">
+                            <img class="grayscale" src="<?php echo $album->cover()->resize(null,500)->url() ?>">
                             <figcaption>
                                 <?= $album->title() ?>
                             </figcaption>

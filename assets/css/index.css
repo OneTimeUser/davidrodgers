@@ -51,6 +51,10 @@ img {
     width: 100%;
 }
 
+.grayscale {
+    filter: grayscale(100%);
+}
+
 .page {
     padding: 0vh 5vw 5vh;
 }

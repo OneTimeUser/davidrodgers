@@ -22,7 +22,12 @@
                      endforeach-->
     </nav>
     </header>
-
+    <svg height="0">
+  <filter id="f1">
+    <feTurbulence type="turbulence" baseFrequency="0.05"
+        numOctaves="2" result="turbulence"/>
+  </filter>
+</svg>
 
     <div class="main__content home-page">
 
@@ -71,7 +76,7 @@
             <p class="about__dark-text">
                 <span> <?= $site->agency()->kirbytextinline() ?></span>
             </p>
-            <p class="about__light-text" style="background:center / cover no-repeat url( <?= $site->agencyimage()->toFile()->url() ?>)">
+            <p class="about__light-text grayscale" style="background:center / cover no-repeat url( <?= $site->agencyimage()->toFile()->url() ?>)">
                 <span> <?= $site->agency()->kirbytextinline() ?></span>
             </p>
 
@@ -79,7 +84,7 @@
         <section id="client-list">
             <?php foreach (page('projects')->children()->listed()->filterBy("category", '!=', 'archive') as $coverImage): ?>
 
-            <img src="<?php echo $coverImage->cover()->resize(null,300)->url() ?>">
+            <img class="grayscale" src="<?php echo $coverImage->cover()->resize(null,300)->url() ?>">
 
             <?php endforeach ?>
 
