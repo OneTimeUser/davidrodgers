@@ -23,10 +23,6 @@
     </nav>
     </header>
     <svg height="0">
-  <filter id="f1">
-    <feTurbulence type="turbulence" baseFrequency="0.05"
-        numOctaves="2" result="turbulence"/>
-  </filter>
 </svg>
 
     <div class="main__content home-page">
