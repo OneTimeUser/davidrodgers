@@ -309,7 +309,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             // translates the image
             this.DOM.image.style.transform = `translate3d(0,${this.renderedStyles.innerTranslationY.previous}px,0)`;
             // translate the title
-            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth/3)}px,0,0)`;
+            this.DOM.title.style.transform = `translate3d(${(this.renderedStyles.titleTranslationX.previous)-(window.innerWidth*1.5)}px,0,0)`;
 
         }
     }
