@@ -13,10 +13,14 @@ icon: 🖼
 #
 #  default: album
 #  extends: options/changeTemplate
+status:
+  draft: Draft
+  listed: Published
   
 options:
   changeStatus: true
   preview: false
+
 #  extends: options/changeTemplate
 
 # Define the form layout with two columns
