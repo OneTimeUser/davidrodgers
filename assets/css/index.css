@@ -1,6 +1,6 @@
 :root {
     --content-width: 65rem;
-    --bg-color: #F8F7F0;
+    --bg-color: white;
     --color-link: #454545;
     font-size: calc(1vw + 1vh + .5vmin);
 }
