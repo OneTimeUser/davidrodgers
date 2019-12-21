@@ -18,9 +18,5 @@ sections:
     headline: Published Projects
     status: listed
     
-  unlisted:
-    extends: sections/albums
-    headline: Unpublished Projects
-    status: unlisted
 
 
