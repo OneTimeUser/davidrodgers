@@ -29,19 +29,6 @@ columns:
           query: page.cover
           cover: true
           ratio: 5/4
-      recent:
-        headline: Recent Projects
-        type: pagesdisplay
-        query: site.index.filterBy("category", "recent", ",")
-        layout: cards
-        size: tiny
-        info: "{{ page.category }}"
-        template: album
-        empty: No albums yet
-        image:
-          query: page.cover
-          cover: true
-          ratio: 5/4
       archive:
         headline: Archive Projects
         type: pagesdisplay
@@ -70,26 +57,26 @@ columns:
       about: 
         type: fields 
         fields:
-            agency:
-              label: Agency About Text
-              type: textarea
-              size: small
-              buttons: false
-              required: true
-            agencyimage:
-              label: Agency Image
-              type: files
-              max: 1
-              cover: true
-              ratio: 1/1
-              required: true
-            clients:
-              label: Clients
-              type: structure
-              fields:
-                client:
-                  label: Client Name
-                  type: text
+#            agency:
+#              label: Agency About Text
+#              type: textarea
+#              size: small
+#              buttons: false
+#              required: true
+#            agencyimage:
+#              label: Agency Image
+#              type: files
+#              max: 1
+#              cover: true
+#              ratio: 1/1
+#              required: true
+#            clients:
+#              label: Clients
+#              type: structure
+#              fields:
+#                client:
+#                  label: Client Name
+#                  type: text
             address:
               label: Address
               type: textarea

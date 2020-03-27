@@ -15,11 +15,17 @@
     <a class="logo" href="<?= $site->url() ?>">D.R</a>
 
     <nav id="menu" class="menu">
-        <span>DAVID RODGERS INC.</span>
-        <!--                    In the menu, we only fetch listed pages, i.e. the pages that have a prepended number in their foldername // We do not want to display links to unlisted `error`, `home`, or `sandbox` pages // More about page status: https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-                    foreach ($site->children()->listed() as $item):
-                    $item->title()->link()
-                     endforeach-->
+        <div class="address">
+            <p>DAVID RODGERS INC.</p>
+            <p>3016 Passmore drive</p>
+            <p>LA, CA 90068</p>
+        </div>
+        <div class="contact">
+            <p>T: 323 462 5310</p>
+            <p>F: 323 462 5360</p>
+            <p><a href="mailto:info@davidrodgersinc.com">info@davidrodgersinc.com</a></p>
+        </div>
+
     </nav>
     </header>
     <svg height="0">
@@ -31,80 +37,79 @@
   // we always use an if-statement to check if a page exists to prevent errors 
   // in case the page was deleted or renamed before we call a method like `children()` in this case
      $album = page('projects')->children()->listed()->filterBy("category", "featured", ",")->shuffle()->first() ?>
-        <section class="home-featured">
-            <article class="client">
-                <figure>
 
-                    <?php 
-          // the `cover()` method defined in the `album.php` page model can be used 
-          // everywhere across the site for this type of page
-          if ($cover = $album->cover()): ?>
-                    <!--                    <?= $cover->resize(1024, 1024) ?>-->
-                    <!--                    new addition-->
-                    <div class="item__img-wrap">
+        <section class="proj featured">
+            <ul class="client" data-page="<?= $page->url() ?>">
+                <?php foreach ($site->index()->listed()->filterBy("category", "featured", ",") as $album): ?>
+                <li class="client-name">
 
-                        <div class="item__img" style="background-image: url(<?php echo $cover->url()?>)"></div>
+                    <div class="client-content">
+                        <article>
+                            <div class='project__container'>
+                                <div class='project__text'>
+                                    <h3 class="client__title">
+
+                                        <?= $album->title() ?>
+                                    </h3>
+
+                                    <span class='project__headline'><?= $album->headline()->value() ?></span>
+                                    <p class='project__sub'>
+                                        <?= $album->subheading()->value() ?>
+                                    </p>
+                                    <p class='project__desc'>
+                                        <?= $album->description()->value() ?>
+                                    </p>
+                                </div>
+                                <div class='project__images main-carousel lazy'>
+                                    <?php foreach($album->images() as $img): ?>
+                                    <img class='carousel-cell-image' data-flickity-lazyload='<?= $img->url() ?>'>
+                                    <?php endforeach ?>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <!--                    end new addition-->
-                    <?php endif ?>
-                    <figcaption>
-
-                        <p class="featured-title">
-
-                            <?= $album->modify()->isEmpty()? $album->title() : $album->modify()->kirbytextinline() ; ?>
-
-                        </p>
-                        <div class="featured-bottom">
-                            <p class="featured-heading">
-                                <?= $album->headline() ?>
-                            </p>
-                            <p class="featured-sub">
-                                <?= $album->subheading() ?>
-                            </p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </article>
-
-            <a class="more" href="<?= page('projects')->url() ?>">VIEW MORE</a>
-        </section>
-        <section id="about-agency">
-            <p class="about__dark-text">
-                <span> <?= $site->agency()->kirbytextinline() ?></span>
-            </p>
-            <p class="about__light-text grayscale" style="background:center / cover no-repeat url( <?= $site->agencyimage()->toFile()->url() ?>)">
-                <span> <?= $site->agency()->kirbytextinline() ?></span>
-            </p>
-
-        </section>
-        <section id="client-list">
-            <?php foreach (page('projects')->children()->listed()->filterBy("category", '!=', 'archive') as $coverImage): ?>
-
-            <img class="grayscale" src="<?php echo $coverImage->cover()->resize(null,300)->url() ?>">
-
-            <?php endforeach ?>
-
-            <span class="section__title">CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS</span>
-            <article>
-                <?php $site->clients()->toStructure()->isOdd() ? $numChunks = ($site->clients()->toStructure()->count()/2) + 1 : $numChunks = $site->clients()->toStructure()->count()/2; ?>
-
-
-
-                <?php $chunks = $site->clients()->toStructure()->chunk($numChunks);?>
-
-                <?php foreach ($chunks as $chunk): ?>
-
-                <ul class="client">
-                    <?php foreach ($chunk as $client): ?>
-                    <li>
-                        <?= $client->client() ?>
-                    </li>
-                    <?php endforeach ?>
-                </ul>
+                </li>
                 <?php endforeach ?>
-            </article>
-
+            </ul>
         </section>
+
+        <section class="proj archive">
+            <h3 class="section__title">Archive</h3>
+
+            <ul class="client" data-page="<?= $page->url() ?>">
+                <?php foreach ($site->index()->listed()->filterBy("category", "archive", ",") as $album): ?>
+                <li class="client-name">
+
+                    <div class="client-content">
+                        <article>
+                            <div class='project__container'>
+                                <div class='project__text'>
+                                    <h3 class="client__title">
+
+                                        <?= $album->title() ?>
+                                    </h3>
+
+                                    <span class='project__headline'><?= $album->headline()->value() ?></span>
+                                    <p class='project__sub'>
+                                        <?= $album->subheading()->value() ?>
+                                    </p>
+                                    <p class='project__desc'>
+                                        <?= $album->description()->value() ?>
+                                    </p>
+                                </div>
+                                <div class='project__images main-carousel'>
+                                    <?php foreach($album->images() as $img): ?>
+                                    <img class='carousel-cell-image' data-flickity-lazyload='<?= $img->url() ?>'>
+                                    <?php endforeach ?>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </li>
+                <?php endforeach ?>
+            </ul>
+        </section>
+
 
 
 

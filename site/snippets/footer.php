@@ -13,32 +13,17 @@
     <footer class="footer">
 
 
-        <?php if ($site): ?>
-        <nav class="footer-nav">
+
+        <section class="bottom">
+            <a class="copywrite" href="<?= url() ?>">&copy;<?= date('Y') ?> David Rodgers Inc.</a>
+
             <ul>
-                <li>
-                    <a class="footer__logo" href="<?= $site->url() ?>"><span>D.R</span></a>
-                    <span>DAVID RODGERS INC.</span>
-                </li>
+
                 <?php foreach ($site->social()->toStructure() as $social): ?>
                 <li class="social"><a href="<?= $social->url() ?>"><?= $social->platform() ?></a></li>
                 <?php endforeach ?>
-                <li>
-                    <p>
-                        <?= $site->address()->kirbytextinline() ?>
-                    </p>
-                    <p>
-                        <?= $site->phone() ?>
-                    </p>
-                    <p>
-                        <a href="emailto:<?= $site->email() ?>"><?= $site->email() ?></a>
-                    </p>
-                </li>
+
             </ul>
-        </nav>
-        <?php endif ?>
-        <section class="bottom">
-            <a href="<?= url() ?>">&copy; <?= date('Y') ?> / <?= $site->title() ?></a>
 
             <a class="site-credit" href="https://www.thewondermob.com">Site Credit</a>
         </section>
@@ -46,21 +31,20 @@
     </div>
     </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@14.0.0/dist/lazyload.min.js"></script>
 
     <?= js([
           'assets/js/jquery.js',
           'assets/js/imagesloaded.pkgd.min.js',
           'assets/js/flickity.js',
           'assets/js/TweenMax.min.js',
+          'assets/js/home.js'
           
         ]) ?>
 
-        <?php if($page->isHomePage()): ?>
-        <?= js([ 'assets/js/home.js' ]) ?>
-            <?php else: ?>
-            <?=js([ 'assets/js/projects.js' ]) ?>
-                <?php endif ?>
 
-                </body>
 
-                </html>
+        </body>
+
+        </html>

@@ -1,3 +1,7 @@
+.home-page {
+    margin-top: 7rem;
+}
+
 .home-featured {
     text-shadow: 0 0 1px var(--bg-color);
 }
@@ -42,6 +46,19 @@
 }
 
 .client-featured {}
+
+.section__title {
+    font-size: 2rem;
+
+    font-weight: 400;
+
+/*
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+*/
+
+    text-align: center;
+}
 
 .home-featured .featured-bottom {
     padding: 1rem;
@@ -169,11 +186,96 @@
 
 }
 
-@media screen and (min-width: 40rem) {
+.client__title {
+    font-size: 1.7rem;
+    font-family: poynter-oldstyle-display-con, serif;
+    font-weight: 300;
+}
 
-    #client-list span {
-        font-size: 2rem;
+.project__container {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.3rem;
+}
+
+.project__text {
+    white-space: normal;
+    font-size: 1rem;
+    margin-bottom: .8rem;
+}
+
+.project__headline {
+    font-weight: 400;
+}
+
+
+
+.project__sub {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main-carousel {
+    /*    margin-top: 16px;*/
+    margin-bottom: 16px;
+}
+
+.main-carousel img {
+    width: auto;
+    height: 45vh;
+    min-width: 150px;
+    margin-right: 10px;
+    display: block;
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+}
+
+
+
+.flickity-button {
+    background: transparent;
+}
+
+/* big previous & next buttons */
+
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+/* icon color */
+
+.flickity-button-icon {
+    fill: white;
+}
+
+
+
+/* hide disabled button */
+
+.flickity-button:disabled {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 64rem) {
+
+    .project__container {
+        display: flex;
+        flex-flow: row nowrap;
     }
 
+    .project__text {
+        width: 25%;
+    }
 
+    .main-carousel {
+        width: 75%;
+    }
 }

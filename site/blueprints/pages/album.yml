@@ -48,15 +48,15 @@ columns:
     # The second column contains a set of fields
     # List of all available field types: https://getkirby.com/docs/reference/panel/fields
     fields:
-      cover:
-        type: files
-        multiple: false
-        required: true
-      modify:
-        help: "If you do not want the title on a single line or if it does not fit, break it up here. Guide: 'Alexander' fits on a single line. 'ALEXANDER' does not. All caps -> 7 characters per line max, otherwise 9-10 characters per line with lower case titles."
-        label: Modified Title (Featured Projects ONLY)
-        type: textarea
-        buttons: false
+#      cover:
+#        type: files
+#        multiple: false
+#        required: true
+#      modify:
+#        help: "If you do not want the title on a single line or if it does not fit, break it up here. Guide: 'Alexander' fits on a single line. 'ALEXANDER' does not. All caps -> 7 characters per line max, otherwise 9-10 characters per line with lower case titles."
+#        label: Modified Title (Featured Projects ONLY)
+#        type: textarea
+#        buttons: false
       headline:
         type: text
         placeholder: e.g. S/S 2019
@@ -65,13 +65,14 @@ columns:
         placeholder: e.g. Presentation
       description:
         type: textarea
+        placeholder: e.g. Basic event highlights
       category:
         label: Category
         type: radio
         required: true
         options:
           featured: Featured
-          recent: Recent
+#          recent: Recent
           archive: Archive
         
           

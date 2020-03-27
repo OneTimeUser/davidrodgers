@@ -39,6 +39,8 @@ section.proj article {
     white-space: normal;
 }
 
+
+
 .client-name {
     display: flex;
     flex-flow: row wrap;
@@ -119,16 +121,8 @@ section.proj article {
     width: auto;
 }
 
-.client-name__archive figure {
-    /*    mix-blend-mode: difference;*/
-}
-
-.client-name__archive figcaption {
-    /*    position: relative;*/
-}
-
-.client-name__archive figcaption:hover {
-    /*    z-index: 3;*/
+.client__title {
+    font-size: 1.7rem;
 }
 
 .project__container {
@@ -138,10 +132,11 @@ section.proj article {
 
 .project__text {
     white-space: normal;
+    font-size: 1rem;
 }
 
 .project__headline {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .project__sub {

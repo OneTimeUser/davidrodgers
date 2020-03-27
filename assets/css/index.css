@@ -2,7 +2,8 @@
     --content-width: 65rem;
     --bg-color: white;
     --color-link: #454545;
-    font-size: calc(1vw + 1vh + .5vmin);
+    /*    font-size: calc(1vw + 1vh + .5vmin);*/
+    font-size: 16px;
 }
 
 *,
@@ -60,35 +61,53 @@ img {
 }
 
 .page > * {
-    max-width: var(--content-width);
+    /*    max-width: var(--content-width);*/
     margin: 0 auto;
 }
 
-.header {}
+.header {
+    background: var(--bg-color);
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 10vw);
+}
 
-.header a,
-.header span {
+.menu {
+    /*    margin-bottom: 3%;*/
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.menu div {
     position: relative;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: .8rem;
+}
+
+.menu div:first-child {
+    margin-right: 1rem;
 }
 
 .header .logo {
     display: block;
-    font-size: 29vw;
-    /*    21vw*/
+    font-size: 5rem;
+    /*    29vw*/
     line-height: 1;
     position: relative;
-    left: -2vw;
+    left: -7px;
+
     /*    text-shadow: 0 0 1px #454545;*/
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+.address {
+    display: none;
 }
+
 
 /* Page Loader */
 
@@ -127,22 +146,13 @@ img {
 }
 
 
-.menu {
-    margin-bottom: 4%;
 
-}
 
+/*
 .menu a[aria-current] {
     border-bottom: 2px solid #000;
 }
-
-.client {
-    font-family: poynter-oldstyle-display-con, serif;
-}
-
-
-
-
+*/
 
 main {
     min-height: calc(100vh - 10rem);
@@ -213,9 +223,10 @@ main {
 
 .footer {
     text-align: center;
-    max-width: var(--content-width);
+    /*    max-width: var(--content-width);
+    */
     margin: 0 auto;
-    line-height: 1.5em;
+    text-transform: uppercase;
 }
 
 .footer__logo {
@@ -250,7 +261,7 @@ main {
 
 .footer-nav a:hover {}
 
-.footer-nav li.social a {
+.bottom li.social a {
     text-indent: -9999px;
     background: center / contain no-repeat url(../img/insta.svg);
     width: 1.5rem;
@@ -261,57 +272,42 @@ main {
 
 
 .bottom {
+    width: calc(100% - 10vw);
     display: flex;
     justify-content: space-between;
+    background-color: var(--bg-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    padding: .5rem 0;
+    font-size: .8rem;
 }
 
+.bottom > * {
+    width: 33%;
+    text-align: center;
+}
+
+.copywrite {
+    text-align: left;
+}
+
+.site-credit {
+    text-align: right;
+}
+
+@media screen and (min-width: 30rem) {}
 
 
 @media screen and (min-width: 40rem) {
+
+    .address {
+        display: block;
+    }
 
     #client-list span {
         font-size: 2rem;
     }
 
-    .footer-nav ul {
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
 
-    .footer-nav ul li {
-        margin: 0;
-        flex-grow: 1;
-    }
-
-    .footer-nav ul li:first-child {
-        text-align: left;
-    }
-    .footer-nav ul li:first-child > span {
-        font-size: .6rem;
-    }
-
-    .footer-nav ul li:last-child {
-        font-size: .8rem;
-        text-align: right;
-        line-height: 1rem;
-    }
-
-    .footer__logo {
-        font-size: 4rem;
-        margin-bottom: 10px;
-        display: block;
-
-    }
-
-    .footer__logo span {
-        position: relative;
-        left: -.5vw;
-        vertical-align: sub;
-    }
-
-    .bottom {
-        font-size: .8rem;
-        margin-top: 3vh;
-    }
 }
