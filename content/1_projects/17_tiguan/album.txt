@@ -2,21 +2,15 @@ Title: Volkswagen Tiguan Launch Party
 
 ----
 
-Cover:
-
-- vw-t-7-950x548.jpg
+Tags: Volkswagen
 
 ----
 
-Modify: 
+Headline: Tiguan Debut
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Launch Party
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - vw-t-7-950x548.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

@@ -2,17 +2,7 @@ Title: Moschino Resort 2020
 
 ----
 
-Cover:
-
-- cover.jpg
-
-----
-
-Modify:
-
-MOS
-CHI
-NO
+Tags: Moschino
 
 ----
 
@@ -29,3 +19,15 @@ Description:
 ----
 
 Category: featured
+
+----
+
+Cover: - cover.jpg
+
+----
+
+Modify:
+
+MOS
+CHI
+NO

@@ -2,14 +2,7 @@ Title: DVF Gala
 
 ----
 
-Cover:
-
-- >
-  dvf-exhibition-party-461750239_120708517552.jpg
-
-----
-
-Modify: DVF
+Tags: Diane von Furstenburg
 
 ----
 
@@ -29,4 +22,11 @@ Category: featured
 
 ----
 
-Tags: featured
+Cover:
+
+- >
+  dvf-exhibition-party-461750239_120708517552.jpg
+
+----
+
+Modify: DVF

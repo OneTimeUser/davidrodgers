@@ -1,5 +1,10 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    if (sessionStorage.getItem('visitedDR')) {
+        $('#splash').hide();
 
+    } else {
+        sessionStorage.setItem('visitedDR', true)
+    }
 
 
     const MathUtils = {
@@ -22,15 +27,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     calcWinsize();
     window.addEventListener('resize', calcWinsize);
 
-    let isOnEl = false;
-
-    $('#client-list article').mouseenter(function () {
-        isOnEl = true;
-    });
-
-    $('#client-list article').mouseleave(function () {
-        isOnEl = false;
-    });
 
     // get the mouse position
     const getMousePos = (ev) => {
@@ -64,14 +60,59 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // gets the distance from the current mouse position to the last recorded mouse position
     const getMouseDistance = () => MathUtils.distance(mousePos.x, mousePos.y, lastMousePos.x, lastMousePos.y);
 
-    let docScroll;
-    // for scroll speed calculation
-    let lastScroll;
-    let scrollingSpeed = 0;
-    // scroll position update function
-    const getPageYScroll = () => docScroll = window.pageYOffset || document.documentElement.scrollTop;
-    window.addEventListener('scroll', getPageYScroll);
+    //    let docScroll;
+    //    // for scroll speed calculation
+    //    let lastScroll;
+    //    let scrollingSpeed = 0;
+    //    // scroll position update function
+    //    const getPageYScroll = () => docScroll = window.pageYOffset || document.documentElement.scrollTop;
+    //    window.addEventListener('scroll', getPageYScroll);
+    if (document.getElementById('home-page')) {
+        scrollFeature();
+    };
 
+    function scrollFeature() {
+        console.log("im in");
+        var scrollArea = document.getElementById('home-page');
+        // var scrollIndicator = document.getElementById('indicator');
+        var scrollIndicator = document.querySelectorAll('.section__title'),
+            i;
+        // console.log(indicator);///
+        var scrollHeight = 0;
+        var scrollOffset = 0;
+        var scrollPercent = 0;
+        resize();
+
+        function loop(elem) {
+            // console.log(elem);
+
+            var indicatorPosition = scrollPercent;
+            scrollOffset = window.pageYOffset || window.scrollTop;
+            scrollPercent = scrollOffset / scrollHeight || 0;
+            indicatorPosition += (scrollPercent - indicatorPosition) * 0.05;
+            var transformString = 'translateX(-' + (indicatorPosition * 300) + 'px)';
+            elem.style.mozTransform = transformString;
+            elem.style.webkitTransform = transformString;
+            elem.style.transform = transformString;
+
+            requestAnimationFrame(function () {
+                loop(elem);
+            }); ///
+        }
+
+
+        for (i = 0; i < scrollIndicator.length; ++i) {
+            loop(scrollIndicator[i]); ////
+        }
+        ///
+
+        function resize() {
+            scrollHeight = window.innerHeight * 4;
+            scrollArea.style.height = (window.innerHeight * 5) + 'px';
+        }
+
+        window.addEventListener('resize', resize);
+    }
 
     var lazyLoadInstances = [];
     var lazyLazy = new LazyLoad({
@@ -85,7 +126,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             // array to keep track of the instances
             lazyLoadInstances.push(oneLL);
             checksize(el);
-            if (lazyLoadInstances.length >= 2) {
+            if (lazyLoadInstances.length == 1) {
                 imagesLoaded(el, function (instance) {
                     removeLoader();
                 });
@@ -119,10 +160,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     function removeLoader() {
         document.body.classList.remove('loading');
+
+        if ($('#splash')) {
+            console.log($('#splash'));
+            $('#splash').fadeOut(800);
+        }
+
     }
 
 
-    function checksize(el) { //callback
+
+
+
+    function checksize(el) {
+        if (matchMedia('screen and (min-width: 64rem)').matches) {
+            var aligntype = 'left';
+        } else {
+            var aligntype = 'center';
+        }
+        //callback
         //            preloadProjectImages().then(() => {
         $(el).on('ready.flickity', ////$('.main-carousel')
             function () {
@@ -138,7 +194,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             lazyLoad: 2,
             percentPosition: false,
             pageDots: false,
-            cellAlign: 'left',
+            cellAlign: aligntype,
             arrowShape: {
                 x0: 25,
                 x1: 65,
@@ -151,6 +207,36 @@ window.addEventListener('DOMContentLoaded', (event) => {
         //        callback();
         //            });
 
+    }
+
+    function setWithExpiry(key, value, ttl) {
+        const now = new Date()
+
+        // `item` is an object which contains the original value
+        // as well as the time when it's supposed to expire
+        const item = {
+            value: value,
+            expiry: now.getTime() + ttl
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+    }
+
+    function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+        // if the item doesn't exist, return null
+        if (!itemStr) {
+            return null
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+        // compare the expiry time of the item with the current time
+        if (now.getTime() > item.expiry) {
+            // If the item is expired, delete the item from storage
+            // and return null
+            localStorage.removeItem(key)
+            return null
+        }
+        return item.value
     }
 
 

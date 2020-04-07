@@ -2,21 +2,15 @@ Title: Warner Music Grammy After Party
 
 ----
 
-Cover:
-
-- warner_grammy-7-950x1012.jpg
+Tags: Warner Music
 
 ----
 
-Modify: 
+Headline: Grammy Awards
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: After Party
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - warner_grammy-7-950x1012.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

@@ -2,18 +2,7 @@ Title: Stella McCartney S/S 2016
 
 ----
 
-Cover:
-
-- >
-  stella-mccartney-prefall-party-18edit.jpg
-
-----
-
-Modify:
-
-Stella
-Mc
-Cartney
+Tags: Stella McCartney
 
 ----
 
@@ -29,8 +18,19 @@ Description:
 
 ----
 
-Category: recent
+Category: featured
 
 ----
 
-Tags: 
+Cover:
+
+- >
+  stella-mccartney-prefall-party-18edit.jpg
+
+----
+
+Modify:
+
+Stella
+Mc
+Cartney

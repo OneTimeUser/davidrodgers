@@ -57,6 +57,14 @@ columns:
 #        label: Modified Title (Featured Projects ONLY)
 #        type: textarea
 #        buttons: false
+      tags:
+        label: Client
+        type: tags
+        min: 1
+        required: true
+        options: query
+        query: site.index.pluck("tags", ",", true)
+        help: Enter Client name and press enter. For collaborations, enter client names separately.
       headline:
         type: text
         placeholder: e.g. S/S 2019
@@ -66,6 +74,10 @@ columns:
       description:
         type: textarea
         placeholder: e.g. Basic event highlights
+      video:
+        label: Video ID
+        type: text
+        help: enter in youtube video id (e.g. https://youtu.be/PGGs6jQUJoY). Video id is PGGs6jQUJoY.
       category:
         label: Category
         type: radio

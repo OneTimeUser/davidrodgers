@@ -80,7 +80,7 @@ img {
     /*    margin-bottom: 3%;*/
     display: flex;
     flex-flow: row wrap;
-
+    font-weight: 400;
 }
 
 .menu div {
@@ -104,10 +104,17 @@ img {
     /*    text-shadow: 0 0 1px #454545;*/
 }
 
+.back {}
+
 .address {
     display: none;
 }
 
+
+section {
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
 
 /* Page Loader */
 
@@ -269,8 +276,6 @@ main {
     display: inline-block;
 }
 
-
-
 .bottom {
     width: calc(100% - 10vw);
     display: flex;
@@ -282,6 +287,8 @@ main {
     padding: .5rem 0;
     font-size: .8rem;
     align-items: center;
+    margin: 0;
+    font-weight: 400;
 }
 
 .bottom > * {
@@ -306,9 +313,11 @@ main {
         display: block;
     }
 
+/*
     #client-list span {
         font-size: 2rem;
     }
+*/
 
 
 }

@@ -2,17 +2,7 @@ Title: Max Mara WIF
 
 ----
 
-Cover:
-
-- >
-  elizabeth-debicki-women-in-film-event-05.jpg
-
-----
-
-Modify:
-
-Max
-Mara
+Tags: Max Mara
 
 ----
 
@@ -28,4 +18,18 @@ Description:
 
 ----
 
-Category: recent
+Category: featured
+
+----
+
+Cover:
+
+- >
+  elizabeth-debicki-women-in-film-event-05.jpg
+
+----
+
+Modify:
+
+Max
+Mara

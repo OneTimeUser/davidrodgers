@@ -2,13 +2,7 @@ Title: GQ MOTY 2019
 
 ----
 
-Cover:
-
-- img_8756.jpg
-
-----
-
-Modify: GQ
+Tags: GQ
 
 ----
 
@@ -24,4 +18,16 @@ Description:
 
 ----
 
+Video: PGGs6jQUJoY
+
+----
+
 Category: featured
+
+----
+
+Cover: - img_8756.jpg
+
+----
+
+Modify: GQ

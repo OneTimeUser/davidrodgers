@@ -2,13 +2,7 @@ Title: Marc By Marc Jacobs
 
 ----
 
-Cover:
-
-- marcbymarcjacobs-950x744.jpg
-
-----
-
-Modify: 
+Tags: Marc Jacobs
 
 ----
 
@@ -16,7 +10,7 @@ Headline:
 
 ----
 
-Subheading: 
+Subheading: Fashion Show
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - marcbymarcjacobs-950x744.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

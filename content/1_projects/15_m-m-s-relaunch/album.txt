@@ -2,17 +2,11 @@ Title: M&M's Relaunch
 
 ----
 
-Cover:
-
-- exterior-2-950x595.jpg
+Tags: M&M
 
 ----
 
-Modify: 
-
-----
-
-Headline: 
+Headline: Relaunch Experience
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - exterior-2-950x595.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

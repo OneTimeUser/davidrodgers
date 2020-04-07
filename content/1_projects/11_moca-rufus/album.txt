@@ -2,18 +2,11 @@ Title: MOCA & Rufus Wainwright
 
 ----
 
-Cover:
-
-- >
-  screen-shot-2010-12-08-at-11.45.51-am.png
+Tags: MOCA
 
 ----
 
-Modify: 
-
-----
-
-Headline: 
+Headline: 40th Anniversary Benefit
 
 ----
 
@@ -25,12 +18,23 @@ Description:
 
 ----
 
+Url: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover:
+
+- >
+  screen-shot-2010-12-08-at-11.45.51-am.png
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

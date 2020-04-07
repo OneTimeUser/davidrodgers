@@ -2,21 +2,15 @@ Title: Cartier Fall Presentation Luncheon
 
 ----
 
-Cover:
-
-- dsp_0056-950x589.jpg
+Tags: Cartier
 
 ----
 
-Modify: 
+Headline: Fall Collection
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Presentation and Luncheon
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - dsp_0056-950x589.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

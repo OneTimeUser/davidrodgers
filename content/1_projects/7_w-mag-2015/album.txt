@@ -2,16 +2,7 @@ Title: W Mag 2015
 
 ----
 
-Cover:
-
-- chateau-marmont-golden-globes.jpg
-
-----
-
-Modify:
-
-W 
-Mag
+Tags: W Magazine
 
 ----
 
@@ -28,3 +19,14 @@ Description:
 ----
 
 Category: featured
+
+----
+
+Cover: - chateau-marmont-golden-globes.jpg
+
+----
+
+Modify:
+
+W 
+Mag

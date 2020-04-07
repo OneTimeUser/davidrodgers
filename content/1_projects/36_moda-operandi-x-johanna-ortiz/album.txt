@@ -2,17 +2,11 @@ Title: Moda Operandi x Johanna Ortiz
 
 ----
 
-Cover:
-
-- 7.jpg
+Tags: Moda Operandi
 
 ----
 
-Modify: 
-
-----
-
-Headline: Capsule Collection
+Headline: Johanna Ortiz Collaboration
 
 ----
 
@@ -24,4 +18,16 @@ Description:
 
 ----
 
-Category: recent
+Video: 
+
+----
+
+Category: featured
+
+----
+
+Cover: - 7.jpg
+
+----
+
+Modify: 

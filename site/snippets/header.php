@@ -33,8 +33,9 @@
 
         <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
         More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers -->
-        <?= css(['assets/css/index.css', '@auto']) ?>
+        <?= css(['assets/css/index.css', 'assets/css/home.css','@auto']) ?>
             <?= css(['assets/css/flickity.css']) ?>
+
                 <script>
                     document.documentElement.className = "js";
                     var supportsCssVars = function() {

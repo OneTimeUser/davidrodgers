@@ -2,17 +2,11 @@ Title: Fashion's Night Out
 
 ----
 
-Cover:
-
-- fno-wt-3-950x1218.jpg
+Tags: Fashion's Night Out
 
 ----
 
-Modify: 
-
-----
-
-Headline: 
+Headline: Los Angeles
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - fno-wt-3-950x1218.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

@@ -2,18 +2,7 @@ Title: Stella McCartney F/W 2018
 
 ----
 
-Cover:
-
-- >
-  screen-shot-2019-11-19-at-12.50.58-pm-1.png
-
-----
-
-Modify:
-
-Stella
-Mc
-Cartney
+Tags: Stella McCartney
 
 ----
 
@@ -30,3 +19,18 @@ Description:
 ----
 
 Category: featured
+
+----
+
+Cover:
+
+- >
+  screen-shot-2019-11-19-at-12.50.58-pm-1.png
+
+----
+
+Modify:
+
+Stella
+Mc
+Cartney

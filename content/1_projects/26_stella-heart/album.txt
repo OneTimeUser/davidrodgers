@@ -2,21 +2,15 @@ Title: Stella McCartney H.E.A.R.T. Brunch
 
 ----
 
-Cover:
-
-- smc-heart-1-1280x1054.jpg
+Tags: Stella McCartney
 
 ----
 
-Modify: 
+Headline: H.E.A.R.T.
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Brunch
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - smc-heart-1-1280x1054.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

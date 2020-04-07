@@ -10,88 +10,90 @@
  */
 ?>
     <?php snippet('header') ?>
+    <a class="back" href="<?= $site->url() ?>"></a>
 
+    <nav id="menu" class="menu">
+        <div class="address">
+            <p>DAVID RODGERS INC</p>
+            <p>
+                <?= $site->address()->kirbytextinline() ?>
+            </p>
+
+        </div>
+        <div class="contact">
+            <p>T:
+                <?= $site->phone()->kirbytextinline() ?>
+            </p>
+            <p><a href="mailto:<?= $site->email() ?>"><?= $site->email()->kt() ?></a></p>
+        </div>
+
+    </nav>
     </header>
-
+    <svg height="0">
+</svg>
 
     <div class="main__content">
 
-        <a class="back" href="<?= $site->url() ?>">BACK</a>
+        <?php 
+$albums = page('projects')->children()->listed()->flip();
+if($tag = urldecode(param('tag'))){
+    $albums = $albums->filterBy('tags', $tag, ',');
+}
+//    echo "<script>console.log('" . json_encode($albums) . "');</script>";s
+    ?>
 
         <section class="proj featured">
-            <span class="section__title">FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED FEATURED</span>
             <ul class="client" data-page="<?= $page->url() ?>">
-                <?php foreach ($site->index()->listed()->filterBy("category", "featured", ",") as $album): ?>
+                <?php foreach ($albums as $album): ?>
                 <li class="client-name">
-                    <a class="client__title" href="<?= $album->url() ?>">
-                        <figure>
-                            <!--if ($cover = $album->cover()): 
-                         $cover->crop(800, 1000) 
-                         #endif -->
-                            <figcaption>
-                                <?= $album->title() ?>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="client__close hide">
-                        <?php echo file_get_contents("assets/img/close.svg"); ?>
-                    </a>
-                    <div class="client-content"></div>
+
+                    <div class="client-content">
+                        <article>
+                            <div class='project__container'>
+                                <div class='project__text'>
+                                    <h3 class="client__title">
+
+                                        <?php foreach ($album->tags()->split() as $tags): ?>
+                                        <span><?= $tags ?></span>
+                                        <?php endforeach ?>
+                                    </h3>
+
+                                    <span class='project__headline'><?= $album->headline()->value() ?></span>
+                                    <p class='project__sub'>
+                                        <?= $album->subheading()->value() ?>
+                                    </p>
+                                    <p class='project__desc'>
+                                        <?= $album->description()->value() ?>
+                                    </p>
+                                </div>
+                                <div class='project__images main-carousel lazy'>
+                                    <?php if ($album->video()->isNotEmpty()): ?>
+                                    <div class='carousel-cell-image video-cell'>
+                                        <?php $vidURL = "https://www.youtube.com/watch?v=" . $album->video()->value(); ?>
+
+                                        <?= youtube($vidURL) ?>
+                                            <!--
+                                            <div class="video-cell__grippy"></div>
+                                            <div class="video-cell__grippy"></div>
+-->
+                                    </div>
+                                    <?php endif ?>
+
+
+
+                                    <?php foreach($album->images() as $img): ?>
+                                    <img class='carousel-cell-image' data-flickity-lazyload-srcset='
+<?= $img->srcset([375, 800, 1024]) ?>' data-flickity-lazyload='<?= $img->url() ?>'>
+                                    <?php endforeach ?>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </li>
                 <?php endforeach ?>
             </ul>
         </section>
-        <section class="proj recent">
-            <span class="section__title">RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT RECENT</span>
-            <ul class="client" data-page="<?= $page->url() ?>">
-                <?php foreach ($page->children()->listed()->filterBy("category", "recent", ",") as $album): ?>
-                <li class="client-name">
-                    <a class="client__title" href="<?= $album->url() ?>">
-                        <figure>
 
-                            <figcaption>
-                                <?= $album->title() ?>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="client__close hide">
-                        <?php echo file_get_contents("assets/img/close.svg"); ?>
-                    </a>
-                    <div class="client-content"></div>
-                </li>
-                <?php endforeach ?>
-            </ul>
-        </section>
-
-        <?php $numCol = $page->children()->listed()->filterBy("category", "archive", ",")->count()/4;?>
-
-        <?php $cols = $page->children()->listed()->filterBy("category", "archive", ",")->chunk(ceil($numCol));?>
-
-        <section class="proj archive">
-            <span class="section__title">ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE ARCHIVE</span>
-            <article>
-
-                <?php foreach ($cols as $col): ?>
-
-                <ul class="client" data-page="<?= $page->url() ?>">
-                    <?php foreach ($col as $album): ?>
-                    <li class="client-name__archive" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
-
-                        <figure>
-                            <img class="grayscale" src="<?php echo $album->cover()->resize(null,500)->url() ?>">
-                            <figcaption>
-                                <?= $album->title() ?>
-                            </figcaption>
-                        </figure>
-
-                    </li>
-                    <?php endforeach ?>
-                </ul>
-
-                <?php endforeach ?>
-                <span></span>
-            </article>
-        </section>
 
 
         <?php snippet('footer') ?>

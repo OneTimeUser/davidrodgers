@@ -2,21 +2,15 @@ Title: Tod's Spring Collection Luncheon
 
 ----
 
-Cover:
-
-- 106158588cw059_tods_lunch_w-950x641.jpg
+Tags: Tod's
 
 ----
 
-Modify: 
+Headline: Spring Collection
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Luncheon
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - 106158588cw059_tods_lunch_w-950x641.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

@@ -2,13 +2,7 @@ Title: Christian Louboutin
 
 ----
 
-Cover:
-
-- cl2.jpg
-
-----
-
-Modify: 
+Tags: Christian Louboutin
 
 ----
 
@@ -16,7 +10,7 @@ Headline:
 
 ----
 
-Subheading: 
+Subheading: Presentation
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - cl2.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

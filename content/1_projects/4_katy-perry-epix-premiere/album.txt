@@ -2,16 +2,7 @@ Title: Katy Perry & Epix Premiere
 
 ----
 
-Cover:
-
-- 16945792411_cea29c8c74_c.jpg
-
-----
-
-Modify:
-
-Katy 
-Perry
+Tags: Katy Perry, Epix
 
 ----
 
@@ -28,3 +19,14 @@ Description:
 ----
 
 Category: featured
+
+----
+
+Cover: - 16945792411_cea29c8c74_c.jpg
+
+----
+
+Modify:
+
+Katy 
+Perry

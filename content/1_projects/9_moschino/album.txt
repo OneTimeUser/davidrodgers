@@ -2,17 +2,7 @@ Title: Moschino Resort 2019
 
 ----
 
-Cover:
-
-- 90.jpeg
-
-----
-
-Modify:
-
-MOS
-CHI
-NO
+Tags: Moschino
 
 ----
 
@@ -28,12 +18,20 @@ Description:
 
 ----
 
-Category: recent
+Category: featured
+
+----
+
+Cover: - 90.jpeg
+
+----
+
+Modify:
+
+MOS
+CHI
+NO
 
 ----
 
 Modified: 
-
-----
-
-Tags: 

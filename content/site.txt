@@ -4,14 +4,36 @@ Title: David Rodgers
 
 Agency:
 
-We are a creative agency focused on full-
-service event production.
+We are a creative agency focused on full-service event production. We are a creative agency focused on full-service event production. We are a creative agency focused on full-service event production. 
+(image: los-angeles.jpeg)
+We are a creative agency focused on full-service event production. We are a creative agency focused on full-service event production. We are a creative agency focused on full-service event production.
 
 ----
 
-Agencyimage:
+Address:
 
-- los-angeles.jpeg
+3016 Passmore Drive
+LA, CA 90068
+
+----
+
+Email: david@davidrodgersinc.com
+
+----
+
+Phone: 323 462 5310
+
+----
+
+Social:
+
+- 
+  platform: Instagram
+  url: https://instagram.com/getkirby
+
+----
+
+Agencyimage: - los-angeles.jpeg
 
 ----
 
@@ -53,29 +75,6 @@ Clients:
   client: Paramount Pictures
 - 
   client: Yahoo
-
-----
-
-Address:
-
-3016 Passmore Drive
-LA, CA 90068
-
-----
-
-Email: info@davidrodgersinc.com
-
-----
-
-Phone: 323 462 5310
-
-----
-
-Social:
-
-- 
-  platform: Instagram
-  url: https://instagram.com/getkirby
 
 ----
 

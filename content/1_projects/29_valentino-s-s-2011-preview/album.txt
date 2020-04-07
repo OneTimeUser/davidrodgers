@@ -2,21 +2,15 @@ Title: Valentino S/S 2011 Preview
 
 ----
 
-Cover:
-
-- valentino-1-950x642.jpg
+Tags: Valentino
 
 ----
 
-Modify: 
+Headline: S/S 2011
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Preview
 
 ----
 
@@ -24,4 +18,16 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
+
+----
+
+Cover: - valentino-1-950x642.jpg
+
+----
+
+Modify: 

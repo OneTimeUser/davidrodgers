@@ -2,21 +2,15 @@ Title: Dom Perignon & David Lynch
 
 ----
 
-Cover:
-
-- dp-3-950x552.jpg
+Tags: Dom Perignon
 
 ----
 
-Modify: 
+Headline: Dom Perignon by David Lynch
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Launch Party
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - dp-3-950x552.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

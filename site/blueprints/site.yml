@@ -57,12 +57,18 @@ columns:
       about: 
         type: fields 
         fields:
-#            agency:
-#              label: Agency About Text
-#              type: textarea
-#              size: small
-#              buttons: false
-#              required: true
+            agency:
+              label: About
+              type: textarea
+              size: medium
+              required: true
+              buttons:
+                - headlines
+                - italic
+                - bold
+                - '|'
+                - link
+                - file
 #            agencyimage:
 #              label: Agency Image
 #              type: files
@@ -81,6 +87,7 @@ columns:
               label: Address
               type: textarea
               required: true
+              buttons: false
             email:
               label: Contact Email
               type: email

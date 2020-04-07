@@ -2,19 +2,15 @@ Title: CFDA - Vogue 2010
 
 ----
 
-Cover: - cfda-14-950x632.jpg
+Tags: CFDA, Vogue
 
 ----
 
-Modify: 
+Headline: 2010
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Presentation
 
 ----
 
@@ -22,4 +18,16 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
+
+----
+
+Cover: - cfda-14-950x632.jpg
+
+----
+
+Modify: 

@@ -2,13 +2,7 @@ Title: Calvin Klein Presentation
 
 ----
 
-Cover:
-
-- ck-exhibit1.png
-
-----
-
-Modify: 
+Tags: Calvin Klein
 
 ----
 
@@ -16,7 +10,7 @@ Headline:
 
 ----
 
-Subheading: 
+Subheading: Exhibit
 
 ----
 
@@ -24,4 +18,16 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
+
+----
+
+Cover: - ck-exhibit1.png
+
+----
+
+Modify: 

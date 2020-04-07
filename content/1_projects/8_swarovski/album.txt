@@ -2,17 +2,7 @@ Title: Swarovski Holiday Display
 
 ----
 
-Cover:
-
-- 5.jpg
-
-----
-
-Modify:
-
-SWA
-ROV
-SKI
+Tags: Swarovski
 
 ----
 
@@ -32,4 +22,12 @@ Category: featured
 
 ----
 
-Tags: 
+Cover: - 5.jpg
+
+----
+
+Modify:
+
+SWA
+ROV
+SKI

@@ -2,17 +2,11 @@ Title: Martin Margiela Store Opening
 
 ----
 
-Cover:
-
-- mg_0033-950x633.jpg
+Tags: Martin Margiela
 
 ----
 
-Modify: 
-
-----
-
-Headline: 
+Headline: Store Opening
 
 ----
 
@@ -24,4 +18,16 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
+
+----
+
+Cover: - mg_0033-950x633.jpg
+
+----
+
+Modify: 

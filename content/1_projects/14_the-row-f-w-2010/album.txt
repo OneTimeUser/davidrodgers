@@ -2,21 +2,15 @@ Title: The Row F/W 2010
 
 ----
 
-Cover:
-
-- olsen_therow2-950x642.jpg
+Tags: The Row
 
 ----
 
-Modify: 
+Headline: F/W 2010
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
+Subheading: Presentation
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - olsen_therow2-950x642.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

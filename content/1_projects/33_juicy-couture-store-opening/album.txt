@@ -2,17 +2,11 @@ Title: Juicy Couture Store Opening
 
 ----
 
-Cover:
-
-- juicy-couture-5th-ave-1.png
+Tags: Juicy Couture
 
 ----
 
-Modify: 
-
-----
-
-Headline: 
+Headline: 5th Avenue Store Opening
 
 ----
 
@@ -24,4 +18,16 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
+
+----
+
+Cover: - juicy-couture-5th-ave-1.png
+
+----
+
+Modify: 

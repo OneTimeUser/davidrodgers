@@ -2,6 +2,30 @@ Title: CFDA - Vogue 2012
 
 ----
 
+Tags: CFDA, Vogue
+
+----
+
+Headline: 2012
+
+----
+
+Subheading: Presentation
+
+----
+
+Description: 
+
+----
+
+Video: 
+
+----
+
+Category: archive
+
+----
+
 Cover: - cfda-12_7-950x674.jpg
 
 ----
@@ -10,24 +34,4 @@ Modify:
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
-
-----
-
-Description: 
-
-----
-
-Category: archive
-
-----
-
 Modified: 
-
-----
-
-Tags: 

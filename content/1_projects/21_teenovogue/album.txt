@@ -2,6 +2,30 @@ Title: Teen Vogue - Young Hollywood
 
 ----
 
+Tags: Teen Vogue
+
+----
+
+Headline: Young Hollywood
+
+----
+
+Subheading: Celebration
+
+----
+
+Description: 
+
+----
+
+Video: 
+
+----
+
+Category: archive
+
+----
+
 Cover:
 
 - >
@@ -13,24 +37,4 @@ Modify:
 
 ----
 
-Headline: 
-
-----
-
-Subheading: 
-
-----
-
-Description: 
-
-----
-
-Category: archive
-
-----
-
 Modified: 
-
-----
-
-Tags: 

@@ -1,7 +1,7 @@
 .back {
-    font-size: 1rem;
+    font-size: 4rem;
     position: relative;
-    top: 15px;
+    top: 0px;
     left: -5px;
 }
 
@@ -10,14 +10,14 @@
     background-image: url(../../img/arrow-left.svg);
     background-size: 100% 100%;
     display: inline-block;
-    width: 2rem;
-    height: .8rem;
+    width: 4rem;
+    height: 2.8rem;
 }
 
 section.proj {
     overflow: hidden;
     white-space: nowrap;
-    margin: 25px 0;
+/*    margin: 25px 0;*/
 }
 
 section.proj article {
@@ -174,10 +174,11 @@ section.proj article {
 }
 
 .main-carousel {
-    margin-top: 16px;
+/*    margin-top: 16px;*/
 }
 
 .main-carousel img {
+/*
     width: auto;
     height: 65vh;
     min-width: 150px;
@@ -185,6 +186,7 @@ section.proj article {
     display: block;
     transition: opacity 0.4s;
     opacity: 0;
+*/
 }
 
 .carousel-cell-image.flickity-lazyloaded,

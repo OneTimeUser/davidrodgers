@@ -2,17 +2,11 @@ Title: GQ Man of the Year Party
 
 ----
 
-Cover:
-
-- img_9815-950x1267.jpg
+Tags: GQ
 
 ----
 
-Modify: 
-
-----
-
-Headline: 
+Headline: Man of the Year 2018
 
 ----
 
@@ -24,12 +18,20 @@ Description:
 
 ----
 
+Video: 
+
+----
+
 Category: archive
 
 ----
 
-Modified: 
+Cover: - img_9815-950x1267.jpg
 
 ----
 
-Tags: 
+Modify: 
+
+----
+
+Modified: 

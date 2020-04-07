@@ -8,14 +8,12 @@
  */
 ?>
 
-
-
     <footer class="footer">
 
 
 
         <section class="bottom">
-            <a class="copywrite" href="<?= url() ?>">&copy;<?= date('Y') ?> David Rodgers Inc.</a>
+            <a class="copywrite" href="<?= url() ?>">&copy;<?= date('Y') ?> David Rodgers Inc</a>
 
             <ul>
 
@@ -28,9 +26,12 @@
             <a class="site-credit" href="https://www.thewondermob.com">Site Credit</a>
         </section>
     </footer>
+
+
     </div>
     </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@14.0.0/dist/lazyload.min.js"></script>
 
