@@ -18,7 +18,7 @@
 
     <nav id="menu" class="menu">
         <div class="address">
-            <p>DAVID RODGERS INC</p>
+            <!--            <p>DAVID RODGERS INC</p>-->
             <p>
                 <?= $site->address()->kirbytextinline() ?>
             </p>
@@ -37,13 +37,10 @@
     <svg height="0">
 </svg>
     <div id="splash">
-        <div class="panel"></div>
         <div class="panel middle">
             <p class="logo">D.R</p>
             <p>DAVID RODGERS INC</p>
         </div>
-        <div class="panel"></div>
-
     </div>
 
     <div class="main__content home-page" id="home-page">
@@ -108,8 +105,15 @@
 
         <section id="client-list" class="scroll-title">
 
+            <span class="section__title">
+                CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS
 
-            <span class="section__title">CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS CLIENTS</span>
+            <!--
+            <?php foreach ($site->clients()->toStructure()->shuffle() as $clientlogo): ?> 
+             CLIENTS <img src='<?php echo $clientlogo->logos()->toFile()->url() ?> '>
+            <?php endforeach ?>
+-->
+            </span>
             <article>
                 <?php
                 $tagsall = page('projects')->children()->listed()->pluck('tags', ',', true);
@@ -136,7 +140,7 @@
         </section>
 
         <section id="about-agency" class="scroll-title">
-            <span class="section__title">ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT</span>
+            <span class="section__title">ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT </span>
             <div class="about__dark-text">
 
 

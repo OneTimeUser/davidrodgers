@@ -33,48 +33,58 @@ Social:
 
 ----
 
-Agencyimage: - los-angeles.jpeg
-
-----
-
 Clients:
 
 - 
-  client: 3.1 Phillip Lim
-- 
+  logos:
+    - vogue.png
+  client-name: Vogue
+  logo: [ ]
   client: Absolut Vodka
 - 
-  client: Barcardi
-- 
-  client: Calvin Klein
-- 
+  logos:
+    - kors.png
+  client-name: Kors
+  logo: [ ]
   client: Cartier
 - 
-  client: Dior
-- 
-  client: Diane Von Furstenberg
-- 
+  logos:
+    - cartier.png
+  client-name: Cartier
+  logo: [ ]
   client: Diesel
 - 
-  client: 'Dolce & Gabbana'
+  logos:
+    - calvin.png
+  client-name: Calvin
 - 
-  client: Giorgio Armani
+  logos:
+    - dvf.png
+  client-name: DVF
 - 
-  client: Hermés
+  logos:
+    - gq.png
+  client-name: GQ
 - 
-  client: "L'Oreal"
+  logos:
+    - marc.png
+  client-name: Marc Jacobs
 - 
-  client: Lexus
+  logos:
+    - moschino.png
+  client-name: Moschino
 - 
-  client: Maison Martin Margiela
+  logos:
+    - stella.png
+  client-name: Stella McCartney
 - 
-  client: Nintendo
-- 
-  client: Museum of Contemporary Art
-- 
-  client: Paramount Pictures
-- 
-  client: Yahoo
+  logos:
+    - swar.png
+  client-name: Swarovski
+
+----
+
+Agencyimage: - los-angeles.jpeg
 
 ----
 

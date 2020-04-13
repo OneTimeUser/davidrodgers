@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         sessionStorage.setItem('visitedDR', true)
     }
 
-
+    console.log("offset before=" + window.pageYOffset);
     const MathUtils = {
         // map number x from range [a, b] to [c, d]
         map: (x, a, b, c, d) => (x - a) * (d - c) / (b - a) + c,
@@ -72,8 +72,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     };
 
     function scrollFeature() {
-        console.log("im in");
-        var scrollArea = document.getElementById('home-page');
+        var scrollArea = document.getElementById('home-page'); //.scrollHeight
         // var scrollIndicator = document.getElementById('indicator');
         var scrollIndicator = document.querySelectorAll('.section__title'),
             i;
@@ -81,16 +80,35 @@ window.addEventListener('DOMContentLoaded', (event) => {
         var scrollHeight = 0;
         var scrollOffset = 0;
         var scrollPercent = 0;
+        var indicatorPosition = scrollPercent;
         resize();
+
+//        function logscroll() {
+//
+//
+//            console.log("offset" + window.pageYOffset);
+//            console.log("actual scroll height" + scrollArea)
+//            console.log("scroll height" + scrollHeight);
+//            console.log("scroll%" + scrollPercent);
+//            console.log("indicatorPosition" + indicatorPosition);
+//
+//        }
+//        window.addEventListener('scroll', logscroll);
 
         function loop(elem) {
             // console.log(elem);
 
-            var indicatorPosition = scrollPercent;
+
             scrollOffset = window.pageYOffset || window.scrollTop;
             scrollPercent = scrollOffset / scrollHeight || 0;
-            indicatorPosition += (scrollPercent - indicatorPosition) * 0.05;
-            var transformString = 'translateX(-' + (indicatorPosition * 300) + 'px)';
+            indicatorPosition += (scrollPercent - indicatorPosition) * .05;
+            var modIndicator = indicatorPosition;
+
+            var transformString = 'translateX(-' + (modIndicator * 300) + 'px)';
+            //            console.log('percent:' +
+            //                scrollPercent);
+            //            console.log('position:' +
+            //                indicatorPosition);
             elem.style.mozTransform = transformString;
             elem.style.webkitTransform = transformString;
             elem.style.transform = transformString;
@@ -108,7 +126,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         function resize() {
             scrollHeight = window.innerHeight * 4;
-            scrollArea.style.height = (window.innerHeight * 5) + 'px';
+            //scrollArea.style.height = (window.innerHeight * 5) + 'px';
         }
 
         window.addEventListener('resize', resize);
@@ -163,7 +181,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         if ($('#splash')) {
             console.log($('#splash'));
-            $('#splash').fadeOut(800);
+            $('#splash').delay(3000).fadeOut(2000);
         }
 
     }
@@ -175,8 +193,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function checksize(el) {
         if (matchMedia('screen and (min-width: 64rem)').matches) {
             var aligntype = 'left';
+            var lazyloadnum = 3;
         } else {
             var aligntype = 'center';
+            var lazyloadnum = 2;
         }
         //callback
         //            preloadProjectImages().then(() => {
@@ -189,9 +209,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         $(el).flickity({
             freeScroll: true,
-            //                wrapAround: true,
-            imagesLoaded: true,
-            lazyLoad: 2,
+            //            wrapAround: true,            imagesLoaded: true,
+            lazyLoad: lazyloadnum,
             percentPosition: false,
             pageDots: false,
             cellAlign: aligntype,

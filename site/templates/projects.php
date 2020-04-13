@@ -10,11 +10,11 @@
  */
 ?>
     <?php snippet('header') ?>
-    <a class="back" href="<?= $site->url() ?>"></a>
+    <a class="back" href="<?= $site->url() ?>#client-list"></a>
 
     <nav id="menu" class="menu">
         <div class="address">
-            <p>DAVID RODGERS INC</p>
+            <!--<p>DAVID RODGERS INC</p>-->
             <p>
                 <?= $site->address()->kirbytextinline() ?>
             </p>

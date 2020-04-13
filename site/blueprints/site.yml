@@ -108,4 +108,24 @@ columns:
                   label: URL
                   type: url
                   width: 2/3
+#            clients:
+#              label: Client Logos
+#              type: structure
+#              help: Max logo height of 150px and image must be on transparent backround
+#              max: 10
+#              min: 10
+#              fields:
+#                logos:
+#                  label: Logo
+#                  type: files
+#                  width: 1/3
+#                  required: true
+#                client-name:
+#                  label: Client
+#                  type: text
+#                  width: 2/3
+#                  required: true
+#             
+                  
+                
             

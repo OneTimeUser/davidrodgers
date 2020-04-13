@@ -154,7 +154,6 @@ section {
 
 
 
-
 /*
 .menu a[aria-current] {
     border-bottom: 2px solid #000;
@@ -313,11 +312,9 @@ main {
         display: block;
     }
 
-/*
+    /*
     #client-list span {
         font-size: 2rem;
     }
 */
-
-
 }
