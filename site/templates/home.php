@@ -106,7 +106,7 @@
     <section id="client-list" class="scroll-title">
 
         <span class="section__title">
-            CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS
+            CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS <span> D.R </span> CLIENTS
 
             <!--
             <?php foreach ($site->clients()->toStructure()->shuffle() as $clientlogo): ?> 
@@ -116,7 +116,8 @@
         </span>
         <article>
             <?php
-                $tagsall = page('projects')->children()->listed()->pluck('tags', ',', true);
+                $tagsall = page('projects')->children()->listed()->pluck('tags', ',', true);//sortby here.
+                sort($tagsall);
                 
                 count($tagsall)%2 !== 0 ? $numChunks = count($tagsall)/2 + .5 : $numChunks = count($tagsall)/2;
                                     
@@ -140,7 +141,7 @@
     </section>
 
     <section id="about-agency" class="scroll-title">
-        <span class="section__title">ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT </span>
+        <span class="section__title">ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT <span> D.R </span> ABOUT</span>
         <div class="about__dark-text">
 
 
