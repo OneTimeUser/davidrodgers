@@ -60,22 +60,6 @@
                 <div class="client-content">
                     <article>
                         <div class='project__container'>
-                            <div class='project__text'>
-                                <h3 class="client__title">
-
-                                    <?php foreach ($album->tags()->split() as $tags): ?>
-                                    <span><?= $tags ?></span>
-                                    <?php endforeach ?>
-                                </h3>
-
-                                <span class='project__headline'><?= $album->headline()->value() ?></span>
-                                <p class='project__sub'>
-                                    <?= $album->subheading()->value() ?>
-                                </p>
-                                <p class='project__desc'>
-                                    <?= $album->description()->value() ?>
-                                </p>
-                            </div>
                             <div class='project__images main-carousel lazy'>
                                 <?php if ($album->video()->isNotEmpty()): ?>
                                 <div class='carousel-cell-image video-cell'>
@@ -94,6 +78,22 @@
                                 <img class='carousel-cell-image' data-flickity-lazyload-srcset='
 <?= $img->srcset([375, 800, 1024]) ?>' data-flickity-lazyload='<?= $img->url() ?>'>
                                 <?php endforeach ?>
+                            </div>
+                            <div class='project__text'>
+                                <h3 class="client__title">
+
+                                    <?php foreach ($album->tags()->split() as $tags): ?>
+                                    <span><?= $tags ?></span>
+                                    <?php endforeach ?>
+                                </h3>
+
+                                <span class='project__headline'><?= $album->headline()->value() ?></span>
+                                <p class='project__sub'>
+                                    <?= $album->subheading()->value() ?>
+                                </p>
+                                <p class='project__desc'>
+                                    <?= $album->description()->value() ?>
+                                </p>
                             </div>
                         </div>
                     </article>

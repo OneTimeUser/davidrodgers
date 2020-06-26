@@ -76,7 +76,7 @@
 .item__img {
     --overflow: 80px;
     height: calc(100% + (2 * var(--overflow)));
-    top: calc( -1 * var(--overflow));
+    top: calc(-1 * var(--overflow));
     width: 100%;
     position: absolute;
     background-size: cover;
@@ -261,7 +261,7 @@
 .project__text {
     white-space: normal;
     font-size: 1.2rem;
-    margin-bottom: .8rem;
+    margin-bottom: 2rem;
     text-align: center;
 
 }
@@ -292,7 +292,7 @@
     height: 45vh;
     min-width: 150px;
     margin-right: 10px;
-/*    display: block;*/
+    /*    display: block;*/
     transition: opacity 0.4s;
     opacity: 0;
 }
@@ -390,7 +390,7 @@ video-cell__grippy {
 
     .project__text {
         width: 60%;
-        margin: 2rem auto 1rem;
+        margin: 1rem auto 3rem;
 
     }
 
